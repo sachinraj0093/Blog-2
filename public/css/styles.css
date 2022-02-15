@@ -1,0 +1,66 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position:fixed;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 2rem;
+  color: #fff;
+}
+.js-flavor-selector:checked {
+    background-image: url(./js-flavor-esm.svg);
+}
+
+
+.js-flavor-selector {
+    height: 1.5em;
+    width: auto;
+    aspect-ratio: 2719 / 384;
+}
+
+.js-flavor-selector {
+    -webkit-appearance: none;
+    appearance: none;
+    float: right;
+    background-image: url(./js-flavor-cjs.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 142px;
+    height: 20px;
+}
+
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}

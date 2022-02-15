@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Daily Journal</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <p class="navbar-brand">DAILY JOURNAL</p>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- 6 -->
+                <li id="home"><a href="/">HOME</a></li>
+                <li id="about"><a href="/about">ABOUT US</a></li>
+                <li id="contact"><a href="/contact">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<body>
+    <div class="container">
+
+        <div class="container mt-5">
+            <h1>Login</h1>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="card">
+                        <div class="card-body">
+
+                            <!-- Makes POST request to /login route -->
+                            <form action="/login" method="POST">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" name="username">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-control" name="password">
+                                </div>
+                                <button type="submit" class="btn btn-dark">Login</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/register"><button type="button" class="btn btn-dark"> register</button></a>
+
+
+                <!-- <div class="col-sm-4">ster</button>
+      <div class="card">
+        <div class="card-body">
+          <a class="btn btn-block" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign In with Google
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+            </div>
+        </div>
+
+        <%- include('partials/footer') %>
